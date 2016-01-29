@@ -1,9 +1,7 @@
 os:
   - osx
-language: python
-python:
-  - "2.7"
 install:
+  - brew install python --universal --framework
   - brew install wxpython
   - "pip install appdirs pyserial simplejson py2app hidapi Cython mock pyobjc-core pyobjc-framework-cocoa pyobjc-framework-quartz"
 script:
