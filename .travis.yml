@@ -1,0 +1,14 @@
+os:
+#  - linux
+  - osx
+language: python
+python:
+  - "2.7"
+# command to install dependencies
+install:
+  - brew install wxpython
+  - "pip install appdirs pyserial simplejson py2app hidapi Cython mock pyobjc-core pyobjc-framework-cocoa pyobjc-framework-quartz"
+# command to run tests
+script:
+  - python setup.py
+  - python run_tests.py
